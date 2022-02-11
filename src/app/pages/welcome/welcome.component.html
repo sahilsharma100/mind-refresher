@@ -1,0 +1,20 @@
+<nz-divider nzOrientation="left" nzText="Playlist"></nz-divider>
+<div nz-row>
+  <div
+    class="m-3"
+    *ngFor="let sound of sounds; let i = index"
+    nz-col
+    [nzXs]="{ span: 24, offset: 0 }"
+    [nzSm]="{ span: 10, offset: 0 }"
+    [nzMd]="{ span: 4, offset: 0 }"
+  >
+    <div class="player-box">
+      <img src="{{ sound.img }}" alt="{{ sound.name }}" title="{{ sound.name }}" (click)="playSound(i)" />
+      <p>{{ sound.name }}</p>
+      <div class="volume icon-wrapper test-class" *ngIf="sound.playing">
+        <i nz-icon nzType="sound" nzTheme="twotone"></i>
+        <nz-slider [(ngModel)]="sound.volume" (ngModelChange)="setVolume(i,sound.volume)" [nzMax]="10" [nzDisabled]="!!sound.type"> </nz-slider>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+.player-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15% 15% 7% 15%;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.36); 
+  box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 3%);
+  transition: box-shadow 0.8s ease-in-out 0s;
+}
+
+.player-box:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 10px 0px;   
+    background-image: url('/assets/images/background.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 3%;
+}
+
+.player-box img{
+    color: #fff;
+    filter: invert(1);
+    width: 55px;
+    opacity: .5;
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+.player-box:hover img{
+    opacity: 1;
+}
+
+.player-box p{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.m-3{
+    margin: 0% 4% 4% 4%;
+}
+
+.icon-wrapper {
+    position: relative;
+    padding: 0px 30px;
+}
+
+[nz-icon] {
+    position: absolute;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+[nz-icon]:first-child {
+    left: 0;
+}
+
+::ng-deep .ant-divider-inner-text{
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .m-3{
+        margin: 4% 0 0 0;
+    }
+}
