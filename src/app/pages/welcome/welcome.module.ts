@@ -8,6 +8,8 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
 
 import { WelcomeComponent } from './welcome.component';
 import { SoundsComponent } from './sounds/sounds.component';
@@ -21,7 +23,9 @@ import { SoundsComponent } from './sounds/sounds.component';
     NzSliderModule,
     FormsModule,
     ReactiveFormsModule,
-    NzIconModule
+    NzIconModule,
+    NzLayoutModule,
+    NzMenuModule
   ],
   declarations: [WelcomeComponent, SoundsComponent],
   exports: [WelcomeComponent],

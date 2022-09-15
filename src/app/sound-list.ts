@@ -3,7 +3,7 @@ import { Sound } from '../app/sound.model';
 export const SOUNDS: Sound[] = [
   {
     id: 11,
-    track: 'http://localhost:4200/assets/sounds/wind.mp3',
+    track: '/assets/sounds/wind.mp3',
     img: 'assets/images/wind.svg',
     volume: 3,
     playing: false,
@@ -12,7 +12,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 12,
-    track: 'http://localhost:4200/assets/sounds/clouds.wav',
+    track: '/assets/sounds/clouds.wav',
     img: 'assets/images/source_icons_cloud.svg',
     volume: 3,
     playing: false,
@@ -21,7 +21,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 13,
-    track: 'http://localhost:4200/assets/sounds/airplane.mp3',
+    track: '/assets/sounds/airplane.mp3',
     img: 'assets/images/source_icons_airplane-helix-45deg.svg',
     volume: 3,
     playing: false,
@@ -30,7 +30,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 14,
-    track: 'http://localhost:4200/assets/sounds/campfire.mp3',
+    track: '/assets/sounds/campfire.mp3',
     img: 'assets/images/source_icons_bonfire.svg',
     volume: 3,
     playing: false,
@@ -39,7 +39,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 15,
-    track: 'http://localhost:4200/assets/sounds/birds.mp3',
+    track: '/assets/sounds/birds.mp3',
     img: 'assets/images/bird.svg',
     volume: 3,
     playing: false,
@@ -48,7 +48,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 16,
-    track: 'http://localhost:4200/assets/sounds/bubbles.mp3',
+    track: '/assets/sounds/bubbles.mp3',
     img: 'assets/images/bubbles.svg',
     volume: 3,
     playing: false,
@@ -57,7 +57,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 17,
-    track: 'http://localhost:4200/assets/sounds/rain-on-tent.mp3',
+    track: '/assets/sounds/rain-on-tent.mp3',
     img: 'assets/images/rain-tent.svg',
     volume: 3,
     playing: false,
@@ -66,7 +66,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 18,
-    track: 'http://localhost:4200/assets/sounds/bus.mp3',
+    track: '/assets/sounds/bus.mp3',
     img: 'assets/images/bus.svg',
     volume: 3,
     playing: false,
@@ -75,7 +75,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 19,
-    track: 'http://localhost:4200/assets/sounds/restaurnt.mp3',
+    track: '/assets/sounds/restaurnt.mp3',
     img: 'assets/images/restaurnt.svg',
     volume: 3,
     playing: false,
@@ -84,7 +84,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 20,
-    track: 'http://localhost:4200/assets/sounds/train-station.mp3',
+    track: '/assets/sounds/train-station.mp3',
     img: 'assets/images/train-station.svg',
     volume: 3,
     playing: false,
@@ -93,7 +93,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 21,
-    track: 'http://localhost:4200/assets/sounds/super-market.mp3',
+    track: '/assets/sounds/super-market.mp3',
     img: 'assets/images/super-market.svg',
     volume: 3,
     playing: false,
@@ -102,7 +102,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 22,
-    track: 'http://localhost:4200/assets/sounds/street.mp3',
+    track: '/assets/sounds/street.mp3',
     img: 'assets/images/street.svg',
     volume: 3,
     playing: false,
@@ -111,7 +111,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 23,
-    track: 'http://localhost:4200/assets/sounds/forest.mp3',
+    track: '/assets/sounds/forest.mp3',
     img: 'assets/images/forest.svg',
     volume: 3,
     playing: false,
@@ -120,7 +120,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 24,
-    track: 'http://localhost:4200/assets/sounds/train.mp3',
+    track: '/assets/sounds/train.mp3',
     img: 'assets/images/train.svg',
     volume: 3,
     playing: false,
@@ -129,7 +129,7 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 25,
-    track: 'http://localhost:4200/assets/sounds/summer-night.mp3',
+    track: '/assets/sounds/summer-night.mp3',
     img: 'assets/images/summer-night.svg',
     volume: 3,
     playing: false,
@@ -138,11 +138,11 @@ export const SOUNDS: Sound[] = [
   },
   {
     id: 26,
-    track: 'http://localhost:4200/assets/sounds/coffe-shop.mp3',
-    img: 'assets/images/coffe-shop.svg',
+    track: '/assets/sounds/coffee-shop.mp3',
+    img: 'assets/images/coffee-shop.svg',
     volume: 3,
     playing: false,
     type: 0,
-    name: 'Coffe Shop',
+    name: 'Coffee Shop',
   },
 ];

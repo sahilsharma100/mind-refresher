@@ -87,3 +87,7 @@ nz-content {
   background-color: rgb(92, 229, 180);
   min-height:auto;
 }
+
+:host {
+  display: block;
+ }

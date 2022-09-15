@@ -11,11 +11,15 @@ export class WelcomeComponent implements OnInit {
   disabled = false;
   sounds: any[] = SOUNDS;
   playing : any = 0;
+  isMute: boolean = false;
+  isCollapsed = false;
+
   constructor(private message: NzMessageService) {
   }
   ngOnInit() {}
 
   playSound(i:any) {
+    // this.isMute ? this.unMute() : '';
     let audio = document.getElementById(i) as HTMLAudioElement;
     if(this.playing >= 4 && !this.sounds[i].playing) {
       this.message.error('You can only play 4 sounds at a time');
@@ -47,5 +51,29 @@ export class WelcomeComponent implements OnInit {
   setVolume(i:any, volume:any) {
     let audio = document.getElementById(i) as HTMLAudioElement;
     audio.volume = volume/10;
+  }
+
+  mute(){
+    let audios = document.querySelectorAll("audio");
+    audios.forEach((audio) => {
+      let id = audio.id;
+      audio as HTMLAudioElement;
+      audio.paused ? '' : this.sounds[id].playing = false;
+      audio.paused ? '' : this.playing = this.playing - 1;
+      audio.paused ? '' : audio.pause();
+    });
+    this.isMute = !this.isMute;
+  }
+
+  unMute(){
+    let audios = document.querySelectorAll("audio");
+    audios.forEach((audio) => {
+      let id = audio.id;
+      audio as HTMLAudioElement;
+      !audio.paused ? '' : this.sounds[id].playing = true;
+      !audio.paused ? '' :  this.playing = this.playing + 1;
+      !audio.paused ? '' : audio.play();
+    });
+    this.isMute = !this.isMute;
   }
 }
